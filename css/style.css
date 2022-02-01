@@ -263,6 +263,7 @@ section {
     align-items: center;
     flex-wrap: wrap-reverse;
     gap:2rem;
+    width: 60%;
 }
 
 .about .row .box-container{
