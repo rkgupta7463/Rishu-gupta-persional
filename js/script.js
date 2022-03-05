@@ -21,3 +21,16 @@ themeToggler.onclick = () =>{
         document.body.classList.remove('active');
     }
 }
+
+function slide1(){
+    document.getElementById('slimg').src="https://source.unsplash.com/1000x250/?technology";
+}
+function slide2(){
+    document.getElementById('slimg').src="https://source.unsplash.com/1000x250/?computer";
+}
+function slide3(){
+    document.getElementById('slimg').src="https://source.unsplash.com/1000x250/?coding";
+}
+setInterval(slide2, 2000);
+setInterval(slide3, 4000);
+setInterval(slide1, 6000);
