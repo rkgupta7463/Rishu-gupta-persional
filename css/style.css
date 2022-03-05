@@ -2,11 +2,13 @@
 
 :root{
     --green:#27ae60;
+    /* --red:#ff0000; */
+    --blue:#1612fc;
     --black:#444;
     --light-color:#777;
     --bg-color:#e6e6e6;
     --border:.1rem solid rgba(0,0,0,.2);
-    --box-shadow:.4rem .4rem 1rem #ccc,
+    --box-shadow:.4rem .4rem 1rem rgb(152, 200, 231),
                 -.4rem -.4rem 1rem #fff;
     --box-shadow-inset:.4rem .4rem 1rem #ccc inset,
                       -.4rem -.4rem 1rem #fff inset;
@@ -85,7 +87,7 @@ body.active{
 }
 
 section {
-    min-height: 100vh;
+    min-height: 88vh;
     padding: 2rem;
 }
 
@@ -116,6 +118,21 @@ section {
 }
 
 .heading span{
+    color:var(--green);
+    text-transform: uppercase;
+}
+
+/* for skill heading  */
+.head{
+    /* text-align: center; */
+    font-size: 5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    padding-bottom: 2rem;
+    margin-top: 6%;
+}
+
+.head span{
     color:var(--green);
     text-transform: uppercase;
 }
@@ -192,19 +209,20 @@ section {
     box-shadow: var(--box-shadow-inset);
 }
 
-#theme-toggler{
+#theme-toggler {
     position: fixed;
-    top:1.5rem; right: 2rem;
+    top: 0.5rem;
+    right: 1.5rem;
     z-index: 1000;
     height: 5rem;
     width: 5rem;
     line-height: 5rem;
-    border-radius: 50%;
+    border-radius: 55%;
     font-size: 2rem;
     cursor: pointer;
     box-shadow: var(--box-shadow);
     text-align: center;
-    color:var(--black);
+    color: var(--black);
     background: var(--bg-color);
 }
 
@@ -343,7 +361,13 @@ section {
 .about .row .progress .bar span{
     display: block;
     height: 100%;
-    background: var(--green);
+    background:linear-gradient(
+        to right,
+        var(--blue) 0%,
+        var(--blue) 40%,
+        var(--green)40%,
+        var(--green)75%
+    );
     border-radius: 5rem;
     width: 22%;
 }
@@ -359,6 +383,12 @@ section {
 .about .row .progress .bar-2-3 span{
     width: 10%;
 }
+.about .row .progress .bar-1-2 span{
+    width: 50%;
+}
+.about .row .progress .bar-1-3 span{
+    width: 70%;
+}
 
 .credits{
     font-size: 2rem;
@@ -372,11 +402,84 @@ section {
 .credits span{
     color: var(--green);
 }
+#emal{
+    padding: 5px;
+}
 
+#cal{
+    padding: 5px;
+}
+#pone{
+    padding: 5px;
+}
 
+.web{
+    margin: 45px;
+    font-size: medium;
+    font-size: larger;
+}
+#link{
+    padding-left: 5px;
+}
 
+.portfolio .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(27rem, 1fr));
+    gap:2rem;
+}
 
+.portfolio .box-container .box{
+    height: 25rem;
+    border-radius: .5rem;
+    overflow:hidden;
+    box-shadow: var(--box-shadow);
+    position: relative;
+    border:1rem solid transparent;
+}
 
+.portfolio .box-container .box img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.portfolio .box-container .box .content{
+    position: absolute;
+    top:0; left: 0;
+    height: 100%;
+    width: 100%;
+    background: var(--bg-color);
+    display: grid;
+    place-items: center;
+    transform: scale(0);
+}
+
+.portfolio .box-container .box:hover .content{
+    transform: scale(1);
+}
+
+.portfolio .box-container .box .content h3{
+    font-size: 2.5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    transform: translateY(-5rem);
+    opacity: 0;
+    transition-delay: .3s;
+}
+.portfolio .box-container .box .content a{
+    font-size: 2.5rem;
+    color:var(--black);
+    text-transform: uppercase;
+    justify-content: center;
+    transform: translateY(-5rem);
+    /* opacity: 0; */
+    transition-delay: .3s;
+}
+
+.portfolio .box-container .box:hover .content h3{
+    transform: translateY(0rem);
+    opacity: 1;
+}
 
 
 
@@ -400,6 +503,10 @@ section {
         padding-left: 0;
     }
 
+    section {
+        min-height: 94vh;
+        padding: 2rem;
+    }
     .header{
         left:-110%;
     }
@@ -427,26 +534,6 @@ section {
     }
 
 }
-
-#emal{
-    padding: 5px;
+#slimg{
+width: 100%;
 }
-
-#cal{
-    padding: 5px;
-}
-#pone{
-    padding: 5px;
-}
-
-
-.web{
-    margin: 45px;
-    font-size: medium;
-    font-size: larger;
-}
-#link{
-    padding-left: 5px;
-}
-
-
