@@ -40,7 +40,7 @@
     font-weight: bold;
 }
 .rd{
-    font-size: small;
+    font-size: medium;
     margin-bottom: 5%;
     font-family: system-ui;
 }
@@ -50,7 +50,7 @@
     font-family: ui-monospace;
 }
 .hello h5{
-    font-size: larger;
+    font-size: medium;
     font-family: 'Font Awesome 5 Brands';
 }
 .content{
@@ -150,7 +150,7 @@ section {
 }
 
 .header .user img{
-    margin:1rem 0;
+    margin:0rem 0;
     border:1rem solid transparent;
     border-radius: 50%;
     height: 19rem;
@@ -536,5 +536,9 @@ section {
 }
 #slimg{
 width: 100%;
-height: 22vh;
+height: 22vh
+}
+
+.container{
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.25);
 }
