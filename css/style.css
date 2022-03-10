@@ -237,6 +237,7 @@ section {
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top:60px;
 }
 
 .home .content h3{
