@@ -34,3 +34,4 @@ function slide3(){
 setInterval(slide2, 2000);
 setInterval(slide3, 4000);
 setInterval(slide1, 6000);
+
