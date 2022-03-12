@@ -524,6 +524,13 @@ section {
 
     }
 }
+#slimg1{
+    box-shadow: 3px 3px 7px pink;
+}
+
+#slimg{
+    box-shadow: 3px 3px 7px pink;
+}
 
 
 
