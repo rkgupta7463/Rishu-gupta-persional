@@ -529,6 +529,7 @@ section {
 }
 
 #slimg{
+    width: 107%;
     box-shadow: 3px 3px 7px pink;
 }
 
