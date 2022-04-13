@@ -153,8 +153,8 @@ section {
     margin:0rem 0;
     border:1rem solid transparent;
     border-radius: 50%;
-    height: 19rem;
-    width: 18rem;
+    height: 24rem;
+    width: 19rem;
     box-shadow: var(--box-shadow);
 }
 
@@ -366,10 +366,10 @@ section {
         var(--blue) 0%,
         var(--blue) 40%,
         var(--green)40%,
-        var(--green)75%
-    );
-    border-radius: 5rem;
-    width: 22%;
+        var(--green)75%,
+    )
+    border-radius: 5rem,
+    width: 22%
 }
 
 .about .row .progress .bar-2-1 span{
