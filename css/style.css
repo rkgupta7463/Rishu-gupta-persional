@@ -282,6 +282,8 @@ section {
     flex-wrap: wrap-reverse;
     gap:2rem;
     width: 60%;
+    display: grid;
+    grid-template-columns: 110% 225%;
 }
 
 .about .row .box-container{
@@ -361,15 +363,9 @@ section {
 .about .row .progress .bar span{
     display: block;
     height: 100%;
-    background:linear-gradient(
-        to right,
-        var(--blue) 0%,
-        var(--blue) 40%,
-        var(--green)40%,
-        var(--green)75%,
-    )
-    border-radius: 5rem,
-    width: 22%
+    background:blue;
+    border-radius: 5rem;
+    width: 22%;
 }
 
 .about .row .progress .bar-2-1 span{
@@ -481,12 +477,12 @@ section {
     opacity: 1;
 }
 #img{
-    width: 15%;
+    width: 45%;
 }
 #img1{
-    width: 15%;
+    width: 45%;
 }
-#img1:hover{
+/* #img1:hover{
     animation: img 6s ease-in-out;
 }
 @keyframes img{
@@ -523,7 +519,7 @@ section {
         width: 15vw;
 
     }
-}
+} */
 #slimg1{
     box-shadow: 3px 3px 7px pink;
 }
@@ -533,7 +529,12 @@ section {
 }
 
 
+#Rishu_pic {
+    width: 24%;
+    height: 100%;
+    border-radius: 50%;
 
+}
 
 
 
@@ -621,4 +622,14 @@ height: 22vh;
 #image1{
     width: 32vw;
     border-radius: 40px;
+}
+
+.about .row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap-reverse;
+    gap: 2rem;
+    width: 60%;
+    display: grid;
+    grid-template-columns: 100% 254%;
 }
